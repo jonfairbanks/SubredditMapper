@@ -19,7 +19,8 @@ Results are saved to disk as JSON and displayed on-screen.
 
 ### To Do
 
-- Parallelization for Subreddit mapping
-- Finalize JSON format
-- HTTP API Support
-- Visualization Support
+- [ ] Parallelization for Subreddit mapping
+- [ ] Finalize JSON format
+- [ ] HTTP API Support
+- [ ] Visualization Support
+- [ ] Docker Image
