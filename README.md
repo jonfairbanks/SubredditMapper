@@ -20,7 +20,8 @@ Results are saved to disk as JSON and displayed on-screen.
 ### To Do
 
 - [ ] Parallelization for Subreddit mapping
+- [x] Refactor Code
 - [ ] Finalize JSON format
-- [ ] HTTP API Support
+- [x] HTTP API Support
 - [ ] Visualization Support
 - [ ] Docker Image
