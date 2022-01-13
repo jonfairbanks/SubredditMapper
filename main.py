@@ -23,11 +23,9 @@ RESET = str('\033[1;37;40m')
 def health_check():
     return "OK"
 
-@app.route("/<sub>")
+@app.route("/api/parse/<sub>")
 def parse(sub):
   args = get_args(sys.argv[1:])
-
-  #print('--- Subreddit Mapper ---\n')
 
   if args.client_id and args.client_secret and args.username and args.password:
     reddit = login(args=args)
@@ -57,9 +55,6 @@ def parse(sub):
           }
           data[len(data)] = temp_data
 
-    #print("\n", GREEN, "***** MAPPING COMPLETE *****", RESET, "\n", sep="")
-    #print(json.dumps(data, indent=4))
-
     executionTime = (time.time() - startTime)
     print('\nExecution time: ' + str(round(executionTime, 2)) + "s")
     
@@ -69,4 +64,5 @@ def parse(sub):
     sys.exit(0)
 
 if __name__ == "__main__":  # pragma: no cover
+  print('--- Subreddit Mapper ---\n')
   app.run(host="0.0.0.0")
