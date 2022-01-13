@@ -1,5 +1,5 @@
 # SubredditMapper
-Discover related subreddits
+API to discover related subreddits
 
 ### Setup
 
@@ -8,19 +8,24 @@ Discover related subreddits
 
 ### Usage
 
-Pass a client id (-c), client secret (-s), username (-u), password (-p) and subreddit (-S) to get started:
+Pass a client id (-c), client secret (-s), username (-u) and password (-p) to get started:
 
 ```
-python3 main.py  -c <CLIENT_ID> -s <CLIENT_SECRET> -u <USERNAME> -p <PASSWORD> -S cars
+python3 main.py  -c <CLIENT_ID> -s <CLIENT_SECRET> -u <USERNAME> -p <PASSWORD>
 ```
 
-Results are saved to disk as JSON and displayed on-screen.
+Once the app has started navigate to Port 5000 in your browser to continue.
 
+### Endpoints
+
+- `/`: Health endpoint (returns "OK")
+- `/api/parse/<subreddit>`: Parse a subreddit for related content 
 
 ### To Do
 
 - [ ] Parallelization for Subreddit mapping
+- [x] Refactor Code
 - [ ] Finalize JSON format
-- [ ] HTTP API Support
-- [ ] Visualization Support
+- [x] HTTP API Support
+- [ ] [Visualization Support](https://fperucic.github.io/treant-js/examples/collapsable/)
 - [ ] Docker Image
