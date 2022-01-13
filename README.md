@@ -11,7 +11,7 @@ API to discover related subreddits
 Pass a client id (-c), client secret (-s), username (-u) and password (-p) to get started:
 
 ```
-python3 main.py  -c <CLIENT_ID> -s <CLIENT_SECRET> -u <USERNAME> -p <PASSWORD>
+python3 main.py -c <CLIENT_ID> -s <CLIENT_SECRET> -u <USERNAME> -p <PASSWORD>
 ```
 
 Once the app has started navigate to Port 5000 in your browser to continue.
