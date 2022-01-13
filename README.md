@@ -1,5 +1,5 @@
 # SubredditMapper
-Discover related subreddits
+API to discover related subreddits
 
 ### Setup
 
