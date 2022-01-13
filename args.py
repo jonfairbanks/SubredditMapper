@@ -10,7 +10,7 @@ def get_args(argv):
     parser.add_argument("-u", "--username", help="your Reddit.com account login", type=str, required=True)
     parser.add_argument("-p", "--password", help="your Reddit.com account password (never stored)", type=str, required=True)
 
-    parser.add_argument("-l", "--limit", help="limit the depth of the subreddit searches (default - 3)", type=int, default=3)
+    parser.add_argument("-l", "--limit", help="limit the depth of the subreddit searches (default - 2)", type=int, default=2)
 
     parser.add_argument("-v", "--version", help="current application version.", action="store_true")
 
