@@ -1,5 +1,4 @@
 import json
-import os
 import sys
 import time
 from flask import Flask
@@ -35,7 +34,7 @@ def parse(sub):
     data = {}
     for i in range(args.limit + 1):
       #print("\n", YELLOW, "[ Mapping Layer ", i, "... ]", RESET, sep="")
-      
+
       # If this is the first run, gather initial data
       if(i == 0):
         temp_data = {
