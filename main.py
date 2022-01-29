@@ -2,6 +2,7 @@ import json
 import sys
 import time
 from flask import Flask
+from flask_cors import CORS
 from markupsafe import escape
 
 from args import get_args
@@ -23,6 +24,7 @@ except Exception as e:
   print("There was an error logging into Reddit:", e)
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/")
 def health_check():
