@@ -98,7 +98,7 @@ def parse_subreddit(reddit, sub, args):
         valid_subs.append(related_subs[i])
 
   except Exception as e:
-    print(RED, "Error finding data for ", sub, ": ", RESET, e, sep="")
+    print(RED, "Error finding data for r/", sub, ": ", RESET, e, sep="")
     pass
 
   return valid_subs
