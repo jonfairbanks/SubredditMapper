@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">    
+      <img src="images/snoo.png" style="height: 100px">
+      <h2>Subreddit Mapper</h2>
+      <hr/>
+      <p style="font-size: 14px">Search a particular subreddit for other related subreddits</p>
+      <form action="/map" method="post" target="_blank">
+        <span>https://reddit.com/r/</span><input type="text" id="subreddit" name="subreddit" placeholder="cars" size="20">
+        <br/><br/>
+        <input type="submit" value="Map">
+      </form>
+    </div>
     <script src="js/app.js"></script>
-    <h2>SubredditMapper</h2>
-    <hr/>
-    <p>Map a Subreddit</p>
-    <form action="/map" method="post" target="_blank">
-      <input type="text" id="subreddit" name="subreddit" placeholder="cars">
-      <br/><br/>
-      <input type="submit" value="Map">
-    </form> 
   </body>
 </html>
